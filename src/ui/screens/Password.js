@@ -36,7 +36,7 @@ const Password = ({navigation}) => {
 	});
 
 	const handleContinue = values => {
-		navigation.navigate(routes.VERIFY);
+		navigation.navigate(routes.LOGIN);
 	};
 
 	const onClickBack = () => {
@@ -52,7 +52,7 @@ const Password = ({navigation}) => {
 				</View>
 				<View style={styles.backContainer}>
 					<TouchableOpacity onPress={onClickBack}>
-						<Text style={{fontFamily: 'Nunito', fontSize: 12, color: '#5A5D82'}}>Back</Text>
+						<Text style={{fontFamily: 'Nunito', fontSize: 12, color: '#5A5D82'}}>{"<"} Back</Text>
 					</TouchableOpacity>
 				</View>
 					<Text style={styles.title}>Create Password</Text>

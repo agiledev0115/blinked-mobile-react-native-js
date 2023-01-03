@@ -57,7 +57,7 @@ const Register = ({navigation}) => {
 			</View>
 			<View style={styles.backContainer}>
 				<TouchableOpacity onPress={onClickBack}>
-					<Text style={{fontFamily: 'Nunito', fontSize: 12, color: '#5A5D82'}}>Back</Text>
+					<Text style={{fontFamily: 'Nunito', fontSize: 12, color: '#5A5D82'}}>{"<"} Back</Text>
 				</TouchableOpacity>
 			</View>
 			<KeyboardAwareScrollView>

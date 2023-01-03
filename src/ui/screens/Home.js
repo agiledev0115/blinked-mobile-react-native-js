@@ -15,7 +15,7 @@ import {units} from '../../themes/Units';
 import {routes} from '../../navigation/routes';
 import {useDispatch} from 'react-redux';
 import {logOutAccount} from '../../context/userSlice';
-import HomeLoading from '../components/HomeLoading';
+import Loading from '../components/Loading';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Octicons from 'react-native-vector-icons/Octicons';
 import authFirebase from '../../services/firebase/auth';
@@ -33,7 +33,7 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      {loading && <HomeLoading />}
+      {loading && <Loading />}
       <View style={styles.statusContainer}>
 
 			</View>

@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, StyleSheet, Image} from 'react-native';
-import Lottie from 'lottie-react-native';
 
 const Loading = () => {
   return (

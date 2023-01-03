@@ -22,14 +22,11 @@ const Login = ({navigation}) => {
   const {loading, loginUser} = authFirebase();
 
   const initailLoginValue = {
-    email: 'delta.beret@gmail.com',
+    email: '',
     password: '',
   };
 
   const loginValidationSchema = Yup.object().shape({
-    email: Yup.string()
-      .email('Email is not in correct format')
-      .required('This field is required'),
     password: Yup.string().required('This field is required'),
   });
 
